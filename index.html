@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="keywords" content="Desarrollo web, back-end, front-end">
+    <meta name="description" content="Desarrollo web profesional">
+    <meta name="owner" content="Yomara Yoselin Galvan Torres">
+    <meta name="author" content="yoselin.galvan.torres@gmail.com">
+    <meta name="robots" content="index, follow">
+    <title>Yoselin Galván Torres</title>
+    <script src="js/modernizr-custom.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/aldo.css">
+    <link rel="stylesheet" href="css/aller.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/design.css">
+</head>
+<body>
+<header>
+    <h1>
+        <figure>
+            <img src="img/logo.png" alt="">
+            
+        </figure>
+        <a href="index.html">Yoselin Galvan</a>
+    </h1>
+    <nav id="ioMenu">
+        <div id="showMenu" class="ioMenuMovil" onclick="displayMenu()">
+            <i class="fas fa-ellipsis-h text-white fa-5x"></i>
+        </div>
+        <div id="card_menu">
+            
+            <i id="hideMenu" class="fas fa-times" onclick="displayMenu()"></i>
+            <figure id="logo_menu">
+                <img  src="img/icone-2.png" alt="">
+            </figure>
+            <ul>
+                <li><a onclick="navSection('home');" href="#">Home</a></li>
+                <li><a onclick="navSection('aboutme');" href="#">Sobre mi</a></li>
+                <li><a onclick="navSection('skills');" href="#">Skills</a></li>
+                <!-- <li><a onclick="navSection('portafolio');" href="#">Portafolio</a></li> -->
+                <!-- <li><a onclick="navSection('blog');" href="#">Blog</a></li> -->
+                <li><a href="#" onclick="displayFormContact('block')">Contacto</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <div id="prev-section" onclick="displaySection('prev');"><i class="fas fa-chevron-left text-white"></i></div>
+    <div id="next-section" onclick="displaySection('next');"><i class="fas fa-chevron-right text-white"></i></div>
+</header>
+<div id="slider">
+    <section class="slide" id="home" style="display:block">
+        <div class="mainanimation">
+
+        </div>
+        <div class="mainlogo">
+            <h2>Soy un <strong>desarrollador</strong>   </h2>
+            <figure>
+                <img src="img/logo.png" alt="">
+            </figure>
+        </div>
+        <div class="buttonpages">
+            <div id="contratame" onclick="displayFormContact('block')">CONTRATAME</div>
+            <a href="docs/cv.pdf" target="_blank">DESCARGAR CV</a>
+        </div>
+    </section>
+    <section class="slide" id="aboutme" style="display:none">
+        <div class="container">
+            <h2>Yoselin Galvan</h2>
+            <h3>Programador web</h3>
+            <p>Soy un desarrollador web</p>
+            <p>Estoy dedicada al desarrollo web, orientado desde diferentes áreas, como la formación de back-end(PHP) al front-end(HTML,CSS,jQuery / Javascrip) accesibilidad digital</p>
+            <p>Me encanta el desarrollo web en todas sus formas y ayudo a las empresas a mejorar su presencia en Internet y a las personas a entender mejor el mundo de la informática y las nuevas tecnologías</p>
+        </div>
+    </section>
+    <section class="slide" id="skills" style="display:none">
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa deleniti veritatis corporis, cumque accusantium odio. Dolorem deleniti perferendis iste est numquam. Sed numquam magnam rerum accusamus, optio praesentium nemo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa deleniti veritatis corporis, cumque accusantium odio. Dolorem deleniti perferendis iste est numquam. Sed numquam magnam rerum accusamus, optio praesentium nemo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa deleniti veritatis corporis, cumque accusantium odio. Dolorem deleniti perferendis iste est numquam. Sed numquam magnam rerum accusamus, optio praesentium nemo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa deleniti veritatis corporis, cumque accusantium odio. Dolorem deleniti perferendis iste est numquam. Sed numquam magnam rerum accusamus, optio praesentium nemo.</p>
+        </div>
+    </section>
+    <section class="slide" id="portafolio" style="display:none">
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa deleniti veritatis corporis, cumque accusantium odio. Dolorem deleniti perferendis iste est numquam. Sed numquam magnam rerum accusamus, optio praesentium nemo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa deleniti veritatis corporis, cumque accusantium odio. Dolorem deleniti perferendis iste est numquam. Sed numquam magnam rerum accusamus, optio praesentium nemo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa deleniti veritatis corporis, cumque accusantium odio. Dolorem deleniti perferendis iste est numquam. Sed numquam magnam rerum accusamus, optio praesentium nemo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa deleniti veritatis corporis, cumque accusantium odio. Dolorem deleniti perferendis iste est numquam. Sed numquam magnam rerum accusamus, optio praesentium nemo.</p>
+        </div>
+    </section>
+    <section class="slide" id="blog" style="display:none">
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa deleniti veritatis corporis, cumque accusantium odio. Dolorem deleniti perferendis iste est numquam. Sed numquam magnam rerum accusamus, optio praesentium nemo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa deleniti veritatis corporis, cumque accusantium odio. Dolorem deleniti perferendis iste est numquam. Sed numquam magnam rerum accusamus, optio praesentium nemo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa deleniti veritatis corporis, cumque accusantium odio. Dolorem deleniti perferendis iste est numquam. Sed numquam magnam rerum accusamus, optio praesentium nemo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa deleniti veritatis corporis, cumque accusantium odio. Dolorem deleniti perferendis iste est numquam. Sed numquam magnam rerum accusamus, optio praesentium nemo.</p>
+        </div>
+    </section>
+</div>
+<div id="contact_form">
+    <form action="contact.php" id="form1" name="form1" method="POST">
+        <figure>
+            <img src="img/logo.png" alt="">
+        </figure>
+        <p>Dí hola</p>
+        <div id="close_form" onclick="displayFormContact('none')">
+            <i class="fas fa-times"></i>
+        </div>
+        <div id="logo_mensaje"></div>
+        <input type="text" id="name" name="name" placeholder="Tu nombre">
+        <input type="email" name="email" id="email" placeholder="Tu email">
+        <textarea name="message" id="message" placeholder="Mensaje"></textarea>
+        <input type="submit" name="Submit" id="button" value="Enviar" />
+    </form>
+</div>
+<div id="contact_button" onclick="displayFormContact('block')">
+    <i class="fas fa-paper-plane"></i>
+</div>
+<footer>
+    <div>
+        <i class="fas fa-chevron-down arrow-first"></i>
+    </div>
+    <div class="rrss">
+        <a href="https://www.facebook.com/yoselin.galvantorres"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/yoselin.galvantorres/"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/YoselinGT"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/yomara-yoselin-galvan-torres/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:yoselin.galvan.torres@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>2020 All rights reserved | Privacity Policy</p>
+</footer>
+<script src="js/script.js"></script>
+    
+</body>
+</html>
